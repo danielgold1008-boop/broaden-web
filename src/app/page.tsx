@@ -2,64 +2,181 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* ── Hero ──────────────────────────────────────────────── */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        {/* Newspaper backdrop */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/hero-newspapers.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+        </div>
+
+        <div className="relative z-10 text-center px-6 max-w-2xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+            Broaden
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+          <p className="text-xl md:text-2xl text-white/90 font-[family-name:var(--font-body)] font-medium mb-10">
+            5 minutes. 1 great article. A smarter you.
+          </p>
+
+          {/* Download buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="https://apps.apple.com/app/id6760425984"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
+              <Image
+                src="/app-store-badge.svg"
+                alt="Download on the App Store"
+                width={180}
+                height={54}
+                className="h-[54px] w-auto"
+              />
+            </a>
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="https://play.google.com/store/apps/details?id=com.dg1008.Broaden"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
             >
-              Learning
-            </a>{" "}
-            center.
+              <Image
+                src="/google-play-badge.png"
+                alt="Get it on Google Play"
+                width={180}
+                height={54}
+                className="h-[54px] w-auto"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── About ─────────────────────────────────────────────── */}
+      <section className="py-20 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Make the most of your screen time
+          </h2>
+          <p className="text-lg leading-relaxed text-muted font-[family-name:var(--font-body)]">
+            Broaden is a daily reading habit app that delivers 5 curated,
+            thought-provoking articles every day &mdash; helping you spend
+            purposeful time on your phone. You don&apos;t need to read all five;
+            even one great article a day is enough to learn something new, keep
+            your streak alive, and share your new knowledge with friends.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+      </section>
+
+      {/* ── Features ──────────────────────────────────────────── */}
+      <section className="py-16 px-6 bg-card">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
+            How it works
+          </h2>
+          <div className="grid md:grid-cols-3 gap-10 text-center">
+            {[
+              {
+                icon: "🧠",
+                title: "Curated for you",
+                desc: "Pick your topics and we'll find the best articles from trusted sources, every single day.",
+              },
+              {
+                icon: "🔥",
+                title: "Build your streak",
+                desc: "Read at least one article a day to keep your streak alive. Miss a day and it resets.",
+              },
+              {
+                icon: "👥",
+                title: "Share with friends",
+                desc: "Compare streaks on the leaderboard and share your favourite reads.",
+              },
+            ].map((f) => (
+              <div key={f.title}>
+                <span className="text-5xl block mb-4">{f.icon}</span>
+                <h3 className="text-xl font-bold mb-2">{f.title}</h3>
+                <p className="text-muted font-[family-name:var(--font-body)]">
+                  {f.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ───────────────────────────────────────────────── */}
+      <section className="py-20 px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Start reading today
+        </h2>
+        <p className="text-muted text-lg mb-8 font-[family-name:var(--font-body)]">
+          Free to download. Your daily reading habit starts now.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://apps.apple.com/app/id6760425984"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block"
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/app-store-badge.svg"
+              alt="Download on the App Store"
+              width={180}
+              height={54}
+              className="h-[54px] w-auto"
             />
-            Deploy Now
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://play.google.com/store/apps/details?id=com.dg1008.Broaden"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block"
           >
-            Documentation
+            <Image
+              src="/google-play-badge.png"
+              alt="Get it on Google Play"
+              width={180}
+              height={54}
+              className="h-[54px] w-auto"
+            />
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* ── Footer ────────────────────────────────────────────── */}
+      <footer className="py-8 px-6 border-t border-card-border">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted font-[family-name:var(--font-body)]">
+          <span>&copy; {new Date().getFullYear()} Broaden</span>
+          <div className="flex gap-6">
+            <a
+              href="https://danielgold1008-boop.github.io/broaden-legal/privacy.html"
+              className="hover:text-foreground transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://danielgold1008-boop.github.io/broaden-legal/terms.html"
+              className="hover:text-foreground transition-colors"
+            >
+              Terms of Service
+            </a>
+            <a
+              href="mailto:hello@broaden.app"
+              className="hover:text-foreground transition-colors"
+            >
+              Get in touch
+            </a>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
