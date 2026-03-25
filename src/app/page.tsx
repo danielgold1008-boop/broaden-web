@@ -8,7 +8,7 @@ export default function Home() {
         {/* Newspaper backdrop */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero-newspapers.jpg"
+            src="/hero-newspapers.jpeg"
             alt=""
             fill
             className="object-cover"
@@ -48,7 +48,7 @@ export default function Home() {
               className="inline-block"
             >
               <Image
-                src="/google-play-badge.png"
+                src="/google-play-badge.svg"
                 alt="Get it on Google Play"
                 width={180}
                 height={54}
@@ -141,7 +141,7 @@ export default function Home() {
             className="inline-block"
           >
             <Image
-              src="/google-play-badge.png"
+              src="/google-play-badge.svg"
               alt="Get it on Google Play"
               width={180}
               height={54}
