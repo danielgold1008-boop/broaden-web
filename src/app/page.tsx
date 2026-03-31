@@ -627,7 +627,7 @@ export default function Home() {
       <section className="page-section features">
         <div className="section-inner">
           <p className="section-label">What&apos;s inside</p>
-          <h2 className="section-title">Built for people who want to read more<br />(but never seem to)</h2>
+          <h2 className="section-title">Built for people who want to read more<br />(and finally can)</h2>
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon feature-icon-1">🧠</div>
