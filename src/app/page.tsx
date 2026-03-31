@@ -25,7 +25,7 @@ export default function Home() {
     },
     {
       q: "What topics can I choose from?",
-      a: "Science, Psychology, Technology, Philosophy, Architecture, History, Neuroscience, Climate, Space, Arts, Culture, Economics, Business, Health, Environment, Law, Lifestyle, Music, Sport, and Current Affairs.",
+      a: "Currently we cover Science, Psychology, Technology, Philosophy, Architecture, History, Neuroscience, Climate, Space, Arts, Culture, Economics, Business, Health, Environment, Law, Lifestyle, Music, Sport, and Current Affairs. If you want more topics, don't hesitate to request them in the feedback function in your settings page!",
     },
   ];
 
@@ -681,8 +681,8 @@ export default function Home() {
       <section className="final-cta">
         <div className="section-inner">
           <p className="section-label">Get started</p>
-          <h2 className="section-title">Start reading tomorrow morning.</h2>
-          <p className="section-sub">Download Broaden, pick 3 topics, and your first 5 articles will be ready when you wake up.</p>
+          <h2 className="section-title">Download now. Read tonight.</h2>
+          <p className="section-sub">Download Broaden, pick 3 topics, and your first 5 articles will be ready within minutes.</p>
           <div className="badge-row">
             <a href="https://apps.apple.com/app/id6760425984">
               <Image src="/app-store-badge.svg" alt="Download on the App Store" width={144} height={48} />
