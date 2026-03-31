@@ -531,7 +531,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-content">
-            <h1>Five articles.<br />Every morning.<br /><span>No noise.</span></h1>
+            <h1>Five articles.<br />Every day.<br /><span>No noise.</span></h1>
             <p className="hero-sub">
               Broaden picks 5 thought-provoking articles for you each day, from sources you can trust. Read one, read all five — either way, you&apos;re building a reading habit that sticks.
             </p>
