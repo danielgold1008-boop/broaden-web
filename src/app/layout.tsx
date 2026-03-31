@@ -15,13 +15,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Broaden — Build a daily reading habit",
+  title: "Broaden — Five articles. Every morning. No noise.",
   description:
-    "5 curated, thought-provoking articles every day. Build a consistent reading habit, track your streak, and share knowledge with friends.",
+    "Broaden picks 5 thought-provoking articles for you each day, from sources you can trust. Build a reading habit that sticks.",
   openGraph: {
-    title: "Broaden — Build a daily reading habit",
+    title: "Broaden — Five articles. Every morning. No noise.",
     description:
-      "5 curated articles every day. Build a reading habit that sticks.",
+      "Broaden picks 5 thought-provoking articles for you each day, from sources you can trust. Build a reading habit that sticks.",
     type: "website",
   },
 };
