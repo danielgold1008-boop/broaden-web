@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -15,11 +15,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Broaden — Five articles. Every morning. No noise.",
+  title: "Broaden — Five articles. Every day. No noise.",
   description:
     "Broaden picks 5 thought-provoking articles for you each day, from sources you can trust. Build a reading habit that sticks.",
   openGraph: {
-    title: "Broaden — Five articles. Every morning. No noise.",
+    title: "Broaden — Five articles. Every day. No noise.",
     description:
       "Broaden picks 5 thought-provoking articles for you each day, from sources you can trust. Build a reading habit that sticks.",
     type: "website",
