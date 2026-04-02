@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dg1008.Broaden",
+      "sha256_cert_fingerprints": [
+        "62:75:62:BF:34:98:DC:B5:BA:5D:50:30:05:45:8E:39:60:9D:A2:BA:F5:B8:F4:32:F9:A4:A8:44:2E:80:18:37"
+      ]
+    }
+  }
+]
