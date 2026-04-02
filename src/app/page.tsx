@@ -522,7 +522,7 @@ export default function Home() {
       {/* NAV */}
       <nav className="site-nav">
         <a href="/" className="nav-logo">Broaden</a>
-        <a href="https://apps.apple.com/app/id6760425984" className="nav-cta">
+        <a href="#download" className="nav-cta">
           Download Free
         </a>
       </nav>
@@ -678,7 +678,7 @@ export default function Home() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="final-cta">
+      <section className="final-cta" id="download">
         <div className="section-inner">
           <p className="section-label">Get started</p>
           <h2 className="section-title">Download now. Read tonight.</h2>
