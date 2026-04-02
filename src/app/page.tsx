@@ -699,9 +699,9 @@ export default function Home() {
       <footer className="site-footer">
         <div>© 2026 Broaden</div>
         <div className="footer-links">
-          <a href="https://danielgold1008-boop.github.io/broaden-legal/privacy.html">Privacy Policy</a>
-          <a href="https://danielgold1008-boop.github.io/broaden-legal/terms.html">Terms of Service</a>
-          <a href="mailto:hello@broaden.app">Get in touch</a>
+          <a href="/legal/privacy">Privacy Policy</a>
+          <a href="/legal/terms">Terms of Service</a>
+          <a href="mailto:hello@broadendaily.com">Get in touch</a>
         </div>
       </footer>
 
